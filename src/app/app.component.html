@@ -1,0 +1,51 @@
+<div class="container" style="border:1px solid #cecece; width: 500px; padding-right: 10px;padding-top: 20px;margin-top:30px; padding-bottom:30px;">
+  <div class="jumbotron col-sm-18 p-1 m-0 bg-inverse ">
+  
+  
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0" >
+      <div class="form-control text-sm-right" type="text" style="padding-bottom:20px;font-size:20px; text-align: right;padding-top: 10px; ">{{displaystr}} {{iconoper}}</div>
+    </div>
+    
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <input class="col-sm-12 form-control text-lg-right" type="text" style="padding-bottom:20px;font-size:20px; text-align: right;padding-top: 10px; margin-bottom: 30px;" value={{numberstr}}>
+    </div>
+    
+    
+   
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" ><div>%</div></button>
+      <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" ><div>CE</div></button>
+      <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1 fa-square-root-alt" type="button" ><div>E</div></button>
+      <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="clean('clean')">clear</button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressope('1/x')"><div><sup>1</sup>/x</div></button>
+      <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressope('sqr')"><div>x<sup>2</sup></div></button>
+      <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1 fa-square-root-alt" type="button" (click)="pressope('sqrroot')"><div><sup>2</sup>&radic;X</div></button>
+      <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressope('/')">/</button>
+    </div>
+  <div class="col-sm-12 p-1 m-0">
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('7')">7</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('8')">8</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('9')">9</button>
+    <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressope('*')">X</button>
+  </div>
+  <div class="col-sm-12 p-1 m-0">
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('4')">4</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('5')">5</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('6')">6</button>
+    <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressope('-')">-</button>
+  </div>
+  <div class="col-sm-12 p-1 m-0">
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('1')">1</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('2')">2</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('3')">3</button>
+    <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressope('+')">+</button>
+  </div>
+  <div class="col-sm-12 p-1 m-0">
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" >.</button>
+    <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressnum('0')">0</button>
+    <button class="btn btn-lg btn-success col-sm-6 p-1" type="button" (click)="equalope()">=</button>
+  </div>
+  </div>
+</div>
